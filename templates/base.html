@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yangiliklar</title>
+</head>
+<body>
+    <header>
+        <a href="{% url 'home' %}">Bosh sahifa</a>  <!--home nomli html fayliga bog'ladik. (django tagi orqali)-->
+        <a href="{% url 'about' %}">Saytimiz haqida</a> <!--'about' nomli html sahifaga bog'ladik= -->
+    </header>
+
+    {% block content %}  <!--Blok mazmuni (boshlanishi) -->
+    {% endblock content %} <!-- Blok oxiri mazmini (tugashi) -->
+</body>
+</html>
